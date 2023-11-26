@@ -1,10 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-height: 100vh;
-  /* flex: 1; */
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
+  background-color: #19212d;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -16,80 +15,82 @@ body {
   flex: 1;
 }
 
-.hero {
-  display: flex;
-  background-color: #1f2937;
-  flex-direction: column;
-}
-
 .header {
   display: flex;
-  background-color: #1f2937;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
   background-color: #1f2937;
-  font-size: 24px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-weight: 900;
 }
 
-/* .header-contents { */
-/*   display: flex; */
-/*   align-items: center; */
-/*   justify-content: space-evenly; */
-/*   font-size: 24px; */
-/* } */
+.header-logo {
+  flex-shrink: 0;
+}
 
-.header a {
+.links {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
   font-size: 18px;
+  gap: 10px;
+  list-style-type: none;
 }
 
-.hero-main {
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.container-1 {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  justify-content: center;
+  justify-content: space-between;
+  padding: 75px 150px 75px 150px;
   background-color: #1f2937;
-}
-
-.text {
-  display: flex;
-  max-width: 640px;
 }
 
 .greet {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-left: 10px;
+}
+
+.text {
+  display: flex;
+  color: #e5e7eb;
+  max-width: 540px;
 }
 
 .intro {
   font-size: 48px;
+  color: #f9faf8;
   margin-bottom: 0;
 }
 
 .picard-image {
   display: flex;
-  margin: 10px;
   flex-shrink: 0;
-  height: 300px;
-  width: 600px;
+  height: 200px;
+  width: 400px;
   border: 1px solid #3b82f6;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   background-position: center;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
 }
 
-ul {
-  display: flex;
-  gap: 10px;
-  list-style-type: none;
+#facepalm {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
 }
 
-.transporter {
+.container-2 {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: space-evenly;
   background-color: #ffffff;
@@ -103,6 +104,7 @@ h2 {
 
 .room {
   display: flex;
+  flex-shrink: 0;
   width: 150px;
   height: 150px;
   padding: 16px;
