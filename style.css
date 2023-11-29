@@ -25,6 +25,9 @@ body {
 }
 
 .header-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8;
   flex-shrink: 0;
 }
 
@@ -47,6 +50,7 @@ a {
 
 .container-1 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 75px 150px 75px 150px;
@@ -67,6 +71,7 @@ a {
 
 .intro {
   font-size: 48px;
+  font-weight: 900;
   color: #f9faf8;
   margin-bottom: 0;
 }
@@ -90,16 +95,27 @@ a {
 
 .container-2 {
   display: flex;
+  flex-direction: column;
   flex: 1;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: #ffffff;
 }
 
-h2 {
+.info-header {
+  display: flex;
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 50px;
 }
 
 .room {
@@ -107,11 +123,15 @@ h2 {
   flex-shrink: 0;
   width: 150px;
   height: 150px;
-  padding: 16px;
   border: 3px solid #3b82f6;
   border-radius: 25px;
   background-position: center;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.room-text {
+  display: flex;
+  gap: 180px;
 }
 
 .quote {
@@ -128,6 +148,7 @@ h2 {
   text-align: left;
   max-width: 700px;
   font-size: 36px;
+  font-style: italic;
 }
 
 .quote-footer {
