@@ -50,6 +50,7 @@ a {
 
 .container-1 {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -95,8 +96,9 @@ a {
 
 .container-2 {
   display: flex;
+  /* flex: 1; */
   flex-direction: column;
-  flex: 1;
+  /* height: 800px; */
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
@@ -113,9 +115,17 @@ a {
 
 .room-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* flex-shrink: 0; */
+  /* align-items: center; */
+  /* justify-content: center; */
   gap: 50px;
+}
+
+.roomWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .room {
@@ -129,17 +139,28 @@ a {
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
 }
 
-.room-text {
+#dogen {
+  height: 150px;
+  width: 150px;
+  border-radius: 23px;
+  object-fit: cover;
+}
+
+.subtext {
   display: flex;
-  gap: 180px;
+  text-align: center;
+}
+
+.roomWrapper p {
+  max-width: 200px;
 }
 
 .quote {
   display: flex;
+  /* flex: 1; */
   align-items: center;
   justify-content: center;
   background-color: #e5e7eb;
-  /* max-width: 250px; */
 }
 
 .quote-text {
@@ -160,5 +181,6 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #1f2937;
+  color: white;
   padding: 15px;
 }
