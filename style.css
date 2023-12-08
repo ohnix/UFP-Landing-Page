@@ -17,6 +17,7 @@ body {
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-left: 150px;
@@ -48,14 +49,25 @@ a {
   color: #e5e7eb;
 }
 
+.containerWall {
+  background-image: url("enterprise\ blacklight.png");
+  display: flex;
+  flex: 1;
+}
+
 .container-1 {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
   padding: 75px 150px 75px 150px;
-  background-color: #1f2937;
+  /* background-color: #1f2937; */
+}
+
+#enterprise {
+  object-fit: cover;
 }
 
 .greet {
@@ -97,8 +109,8 @@ a {
 .container-2 {
   display: flex;
   /* flex: 1; */
+  height: 500px;
   flex-direction: column;
-  /* height: 800px; */
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
@@ -115,21 +127,25 @@ a {
 
 .room-container {
   display: flex;
-  /* flex-shrink: 0; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
 }
 
 .roomWrapper {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 125px;
 }
 
 .room {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-shrink: 0;
   width: 150px;
   height: 150px;
@@ -139,7 +155,28 @@ a {
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
 }
 
+#contact {
+  height: 150px;
+  width: 150px;
+  border-radius: 23px;
+  object-fit: cover;
+}
+
 #dogen {
+  height: 150px;
+  width: 150px;
+  border-radius: 23px;
+  object-fit: cover;
+}
+
+#vic {
+  height: 150px;
+  width: 150px;
+  border-radius: 23px;
+  object-fit: cover;
+}
+
+#pad {
   height: 150px;
   width: 150px;
   border-radius: 23px;
@@ -148,16 +185,17 @@ a {
 
 .subtext {
   display: flex;
+  position: absolute;
+  width: 200px;
+  top: 160px;
+  justify-content: center;
   text-align: center;
-}
-
-.roomWrapper p {
-  max-width: 200px;
 }
 
 .quote {
   display: flex;
   /* flex: 1; */
+  height: 500px;
   align-items: center;
   justify-content: center;
   background-color: #e5e7eb;
@@ -174,6 +212,20 @@ a {
 
 .quote-footer {
   padding: 10px;
+}
+
+.signup {
+  display: flex;
+  height: 500px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupBox {
+  height: 150px;
+  width: 900px;
+  background-color: #3882f6;
 }
 
 .footer {
