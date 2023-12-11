@@ -50,7 +50,7 @@ a {
 }
 
 .containerWall {
-  background-image: url("enterprise\ blacklight.png");
+  /* background-image: url("enterprise\ blacklight.png"); */
   display: flex;
   flex: 1;
 }
@@ -67,7 +67,8 @@ a {
 }
 
 #enterprise {
-  object-fit: cover;
+  /* height: 100vh; */
+  object-fit: contain;
 }
 
 .greet {
@@ -108,7 +109,7 @@ a {
 
 .container-2 {
   display: flex;
-  /* flex: 1; */
+  flex: 1;
   height: 500px;
   flex-direction: column;
   align-items: center;
@@ -218,14 +219,51 @@ a {
   display: flex;
   height: 500px;
   background: white;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .signupBox {
+  display: flex;
   height: 150px;
   width: 900px;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
   background-color: #3882f6;
+  border-radius: 15px;
+}
+
+#signupHeader {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 0;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#signupInfo {
+  margin-top: 0;
+  color: white;
+}
+
+#signupButtonDiv {
+  display: flex;
+  align-items: center;
+}
+
+.signButton {
+  background-color: #3882f6; /* Green */
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .footer {
